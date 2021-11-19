@@ -1,0 +1,26 @@
+.Header-Search{
+    color:#045083;
+    text-align: center;
+}
+.Bar{
+    text-align: center;
+    margin-left: 40%;
+}
+.Bar-Button{
+    margin-top: 10px;
+    margin-left: 45%;
+    margin-Bottom: 10px;
+}
+.Search-Bar{
+    height: 40px;
+    width: 250px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border: 1px solid #0185dd;
+    padding-left:10px;
+}
+.Align-InCard{
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}
