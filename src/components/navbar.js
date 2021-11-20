@@ -77,8 +77,8 @@ const NavBar = () => {
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav>
                             <Image style={{paddingLeft:"20px",height:"50px"}} src={Logo.default}/>
-                            <Nav.Link href="/" style={{paddingLeft:"25px",textDecoration:"none",color:"white",fontSize:"22px"}}>Home</Nav.Link>
-                            <Nav.Link href="/favourite" style={{paddingLeft:"25px",textDecoration:"none",color:"white",fontSize:"22px"}}>Favourite</Nav.Link>
+                            <Nav.Link href="./" style={{paddingLeft:"25px",textDecoration:"none",color:"white",fontSize:"22px"}}>Home</Nav.Link>
+                            <Nav.Link href="./favourite" style={{paddingLeft:"25px",textDecoration:"none",color:"white",fontSize:"22px"}}>Favourite</Nav.Link>
                             { !localStorage.getItem('token') && <Nav.Link onClick={(event)=>{handleShowLogin();}} style={{paddingLeft:"600px",textDecoration:"none",color:"white",fontSize:"22px",marginLeft:"auto"}}>Login</Nav.Link>}
                             { !localStorage.getItem('token') && <Nav.Link onClick={(event)=>{handleShowSignup();}} style={{paddingLeft:"25px",textDecoration:"none",color:"white",fontSize:"22px",marginLeft:"auto"}}>Sign-Up</Nav.Link>}
                             { localStorage.getItem('token') && <Nav.Link onClick={(event)=>{handleLogout();}} style={{paddingLeft:"600px",textDecoration:"none",color:"white",fontSize:"22px",marginLeft:"auto"}}><strong>{localStorage.getItem('profile')}</strong>-Logout</Nav.Link>}
